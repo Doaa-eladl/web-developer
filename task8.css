@@ -1,0 +1,269 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color: #be3144;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.navaitems{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.navitem{
+    margin: 0px;
+    color: #f0f0f0;
+    font-size: 22px;
+    padding: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navitem:hover{
+    background-color: #9fa2c766;
+}
+
+.introssection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    height: 688px;
+    width: 100%;
+    margin-top: 65px;
+}
+
+h1{
+    font-size: 60px;
+    color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
+.intropragraph{
+    color: #be3144;
+    margin: 0px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.mainsection{
+    background-color: #45567d;
+    display: flex;
+    text-align: center;
+    padding: 20px 0px;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    color: #f0f0f0;
+    border-bottom: 0.1rem solid #f0f0f0;
+    max-width: 587px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    height: fit-content;
+    padding: 5px 10px;
+    margin: 65px auto 2rem auto;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(374px, 1fr));
+    width: 98%;
+    gap: 4rem;
+    max-width: 1280px;
+    margin: 30px auto;
+}
+
+.projectlink{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.projectsimage{
+    width: 375px;
+    height: 375px;
+    object-fit: cover;
+}
+
+.projectstitle{
+    width: 375px;
+    height: 35px;
+    color: #f0f0f0;
+    background-color: #303841;
+    margin: auto;
+    padding: 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.code{
+    color: #f0f0f0;
+    transition: color 0.3s ease-out;
+}
+
+.code:hover{
+    /*بردو مش عارفه ازاي اخلي تاثير الجزء بتاع الكود يظهر من اول م اجي ع الصوره او العنوان نفس المشكله بتاعت الزرار show all*/
+    color: orange;
+    width: 340px;
+    height: 359px;
+}
+
+.showlink{
+    height: 42px;
+    text-align: center;
+    background-color: #303841;
+    width: 145px;
+    margin: 25px auto 60px auto;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.showlink:hover{
+    background-color: #be3144;
+    transform: translateX(0px);
+}
+
+.showlink >i{
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.showlink >i:hover{
+    /*ف التاسك اي حركه عاللينك كله بتحرك السهم مش  عارفه اعملها ازاي*/
+    transform: translateX(3px);
+}
+
+.endsection{
+    background-color: #303841;
+    width: 100%;
+    padding: 170px 0px 240px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3{
+    color: #f0f0f0;
+    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
+.endpragraph{
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+.socialdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 750px;
+    margin-top:50px;
+}
+
+.socialwebsite{
+    color: #f0f0f0;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 0px 15px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+}
+
+.socialwebsite:hover{
+    transform: translateY(6px);
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #303841;
+    padding: 1.5rem;
+    border-top: #be3144 solid 4px;
+}
+
+.footerpragraph{
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem;
+}
+
+.footerpragraph >a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+@media(max-width:730px){
+    .projectlink{
+        display: flex;
+        width: 96%;
+        height: 680px;
+        margin: 0px auto;
+    }
+    .projectsimage{
+        width: 100%;
+        height: 615px;
+        object-fit: fill;
+    }
+    .projectstitle{
+        width: 100%;
+        height: 50px;
+    }
+    .socialdiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px;
+    }
+    .socialwebsite{
+        padding: 10px 0px;
+    }
+    .footerpragraph{
+        margin: 9px;
+    }
+}
